@@ -15,25 +15,19 @@ To use, create a workflow (eg: .github/workflows/label.yml see Creating a Workfl
 
 ```yaml
 name: "My workflow"
-
-on: [push]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    
     steps:
     - name: Tag commit
-      uses: pxpm/github-tag-action@1.0.0
+      uses: pxpm/github-tag-action@1.0.1
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         tag: "my_tag"
+```
 
-
-# An optional commit sha can be specified to override the default
-    steps:
+Alternatively you can add a commit sha to override the default:
+```yaml
+steps:
     - name: Tag commit
-      uses: pxpm/github-tag-action@1.0.0
+      uses: pxpm/github-tag-action@1.0.1
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         tag: "my_tag"
