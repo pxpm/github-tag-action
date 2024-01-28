@@ -24,7 +24,7 @@ jobs:
     
     steps:
     - name: Tag commit
-      uses: pxpm/github-tag-action@v0.0.1
+      uses: pxpm/github-tag-action@1.0.0
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         tag: "my_tag"
@@ -33,7 +33,7 @@ jobs:
 # An optional commit sha can be specified to override the default
     steps:
     - name: Tag commit
-      uses: pxpm/github-tag-action@v0.0.1
+      uses: pxpm/github-tag-action@1.0.0
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         tag: "my_tag"
