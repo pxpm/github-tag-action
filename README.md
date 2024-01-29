@@ -7,6 +7,8 @@
 [![Coverage](./badges/coverage.svg)](./badges/coverage.svg)
 
 ### This package is an updated version of https://github.com/tvdias/github-tagger
+Code was literally copied from that package and pasted here using an updated version of the action boilerplate. 
+Thanks to all the people who also contributed over that other repo: https://github.com/tvdias/github-tagger/graphs/contributors
 
 Tags the commit with a given text
 
